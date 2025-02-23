@@ -44,17 +44,17 @@ main .hero-text .text p {
 }
 main .image-text {
   width: 100%;
-  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
   gap: 1.7em;
 }
 main .image-text .top {
   width: 100%;
+  aspect-ratio: 1/1;
 }
 main .image-text .top img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -96,4 +96,25 @@ main .image-text .bottom .services .line {
   width: 100%;
   height: 1px;
   background-color: rgba(17, 17, 17, 0.15);
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+  }
+  main .image-text {
+    flex-direction: row-reverse;
+  }
+  main .image-text .bottom h1 {
+    font-size: 5em;
+  }
+  main .image-text .bottom p {
+    font-size: 2em;
+  }
+  main .image-text .bottom .services {
+    margin-top: auto;
+  }
+  main .image-text .bottom .services .service p {
+    font-size: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */
