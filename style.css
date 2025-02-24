@@ -97,6 +97,50 @@ main .image-text .bottom .services .line {
   height: 1px;
   background-color: rgba(17, 17, 17, 0.15);
 }
+main .view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .view1 .top {
+  width: 100%;
+}
+main .view1 .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view1 .bottom {
+  width: 100%;
+  display: flex;
+  gap: 2em;
+}
+main .view1 .bottom .vertical-text {
+  writing-mode: sideways-rl;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  word-spacing: 0.5em;
+}
+main .view1 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .view1 .bottom .text h1 {
+  font-size: 3.2em;
+  font-family: "gilroy";
+  font-weight: 500;
+  line-height: 0.9em;
+  text-transform: uppercase;
+}
+main .view1 .bottom .text p {
+  font-family: monospace;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  opacity: 50%;
+}
 
 @media (min-width: 900px) {
   main {
@@ -116,5 +160,24 @@ main .image-text .bottom .services .line {
   }
   main .image-text .bottom .services .service p {
     font-size: 2em;
+  }
+  main .view1 {
+    flex-direction: row;
+    gap: 4em;
+  }
+  main .view1 .top {
+    width: 45%;
+  }
+  main .view1 .bottom {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2em 0;
+  }
+  main .view1 .bottom .text {
+    width: 70%;
+    justify-content: space-between;
+  }
+  main .view1 .bottom .text h1 {
+    font-size: 6.3em;
   }
 }/*# sourceMappingURL=style.css.map */
