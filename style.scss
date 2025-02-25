@@ -270,20 +270,19 @@ main {
 
   .view3 {
     width: 100%;
-    padding: 1.5rem;
-    padding-top: 0.4rem;
+    padding: 1.5em;
+    padding-top: 0.8em;
 
-    h1 {
-      font-size: 3rem;
-      text-transform: uppercase;
-      font-weight: 400;
+    img {
+      width: 100%;
+      object-fit: cover;
     }
 
     .view3-image-text {
       display: flex;
       flex-direction: column;
       gap: 1.8em;
-      
+
       .top {
         width: 100%;
         padding-top: 1.2em;
@@ -292,10 +291,14 @@ main {
           width: 100%;
 
           img {
-            width: 100%;
             height: 100%;
+            width: 100%;
             object-fit: cover;
           }
+        }
+
+        .image2 {
+          display: none;
         }
 
         .text {
@@ -364,6 +367,10 @@ main {
             height: 100%;
             object-fit: cover;
           }
+        }
+
+        .image2 {
+          display: none;
         }
 
         .text {
@@ -488,6 +495,91 @@ main {
         h1 {
           font-size: 6em;
           font-weight: 600;
+        }
+      }
+    }
+
+    .view3 {
+      padding: 4rem;
+      padding-top: 0.9em;
+
+      h1 {
+        font-size: 14em;
+        font-weight: 600;
+      }
+
+      .view3-image-text {
+        padding: 3em 0;
+
+        .top {
+          display: flex;
+          gap: 2em;
+
+          .image {
+            width: 80%;
+          }
+
+          .image2 {
+            display: initial;
+            width: 80%;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .text {
+            width: 80%;
+            padding-left: 2em;
+            justify-content: space-between;
+            padding-bottom: 2em;
+
+            .text-top {
+              width: 70%;
+
+              h3 {
+                font-size: 4em;
+              }
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: row-reverse;
+          gap: 2em;
+
+          .image {
+            width: 80%;
+          }
+
+          .image2 {
+            display: initial;
+            width: 80%;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .text {
+            width: 80%;
+            padding-left: 2em;
+            justify-content: space-between;
+            padding-bottom: 2em;
+
+            .text-top {
+              width: 70%;
+
+              h3 {
+                font-size: 4em;
+              }
+            }
+          }
         }
       }
     }

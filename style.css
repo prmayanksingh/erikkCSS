@@ -235,13 +235,13 @@ main .line {
 }
 main .view3 {
   width: 100%;
-  padding: 1.5rem;
-  padding-top: 0.4rem;
+  padding: 1.5em;
+  padding-top: 0.8em;
 }
-main .view3 h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 400;
+main .view3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .view3 .view3-image-text {
   display: flex;
@@ -256,10 +256,13 @@ main .view3 .view3-image-text .top .image {
   width: 100%;
 }
 main .view3 .view3-image-text .top .image img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .view3 .view3-image-text .top .image2 {
+  display: none;
 }
 main .view3 .view3-image-text .top .text {
   width: 100%;
@@ -318,6 +321,9 @@ main .view3 .view3-image-text .bottom .image img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .view3 .view3-image-text .bottom .image2 {
+  display: none;
 }
 main .view3 .view3-image-text .bottom .text {
   width: 100%;
@@ -416,5 +422,75 @@ main .view3 .view3-image-text .bottom .text .text-bottom p {
   main .view2 .top h1 {
     font-size: 6em;
     font-weight: 600;
+  }
+  main .view3 {
+    padding: 4rem;
+    padding-top: 0.9em;
+  }
+  main .view3 h1 {
+    font-size: 14em;
+    font-weight: 600;
+  }
+  main .view3 .view3-image-text {
+    padding: 3em 0;
+  }
+  main .view3 .view3-image-text .top {
+    display: flex;
+    gap: 2em;
+  }
+  main .view3 .view3-image-text .top .image {
+    width: 80%;
+  }
+  main .view3 .view3-image-text .top .image2 {
+    display: initial;
+    width: 80%;
+  }
+  main .view3 .view3-image-text .top .image2 img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .view3-image-text .top .text {
+    width: 80%;
+    padding-left: 2em;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+  main .view3 .view3-image-text .top .text .text-top {
+    width: 70%;
+  }
+  main .view3 .view3-image-text .top .text .text-top h3 {
+    font-size: 4em;
+  }
+  main .view3 .view3-image-text .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+  main .view3 .view3-image-text .bottom .image {
+    width: 80%;
+  }
+  main .view3 .view3-image-text .bottom .image2 {
+    display: initial;
+    width: 80%;
+  }
+  main .view3 .view3-image-text .bottom .image2 img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .view3-image-text .bottom .text {
+    width: 80%;
+    padding-left: 2em;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+  main .view3 .view3-image-text .bottom .text .text-top {
+    width: 70%;
+  }
+  main .view3 .view3-image-text .bottom .text .text-top h3 {
+    font-size: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
