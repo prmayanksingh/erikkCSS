@@ -433,6 +433,7 @@ main {
     width: 100%;
     padding: 1.5em;
     padding-top: 1.1em;
+    padding-bottom: 2em;
     display: flex;
     flex-direction: column;
     gap: 1.6em;
@@ -484,6 +485,103 @@ main {
       }
     }
   }
+
+  .view5 {
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 3.3em;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.5em;
+        font-family: monospace;
+        line-height: 1.4em;
+        color: #2d2d2d;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2em;
+
+      .member {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h3 {
+          font-size: 1.6em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .image {
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5em;
+
+          .logo-text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h6 {
+              font-size: 1.1em;
+              text-transform: uppercase;
+              font-family: monospace;
+              letter-spacing: 0.7px;
+              color: #5b5b5b;
+            }
+
+            .logo {
+              display: flex;
+              gap: 0.8em;
+
+              i {
+                opacity: 70%;
+              }
+            }
+          }
+
+          p {
+            width: 95%;
+            font-family: monospace;
+            font-size: 1.3em;
+            line-height: 1.6em;
+            color: rgba(17, 17, 17, 0.5);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -492,7 +590,7 @@ main {
 
     .image-text {
       flex-direction: row-reverse;
-      padding: 4rem;
+      padding: 4em;
 
       .bottom {
         h1 {
@@ -518,7 +616,7 @@ main {
     .view1 {
       flex-direction: row;
       gap: 4em;
-      padding: 4rem;
+      padding: 4em;
 
       .top {
         width: 45%;
@@ -543,7 +641,7 @@ main {
     .view2 {
       flex-direction: row;
       padding-top: 3em;
-      padding: 4rem;
+      padding: 4em;
 
       .top {
         padding-top: 1.5em;
@@ -556,7 +654,7 @@ main {
     }
 
     .view3 {
-      padding: 4rem;
+      padding: 4em;
       padding-top: 0.9em;
 
       h1 {
@@ -643,7 +741,7 @@ main {
     .view4 {
       display: grid;
       grid-template-areas: "a a b b";
-      padding: 4rem;
+      padding: 4em;
       padding-top: 0em;
 
       .a {
@@ -671,7 +769,7 @@ main {
             display: flex;
             gap: 3em;
 
-            h3{
+            h3 {
               font-size: 2em;
             }
 
@@ -680,6 +778,29 @@ main {
             }
           }
         }
+      }
+    }
+
+    .view5{
+      padding: 4em;
+      padding-top: 1em;
+      
+      .top{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+          font-size: 9em;
+        }
+
+        p{
+          width: 50%;
+        }
+      }
+
+      .bottom{
+        flex-direction: row;
       }
     }
   }
