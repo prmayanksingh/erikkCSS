@@ -500,6 +500,49 @@ main .view5 .bottom .member .text p {
   line-height: 1.6em;
   color: rgba(17, 17, 17, 0.5);
 }
+main .view6 {
+  padding: 1.5em;
+}
+main .view6 .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+}
+main .view6 .text h6 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #494949;
+}
+main .view6 .text h1 {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+main .view6 .text .arrow-text {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+main .view6 .text .arrow-text .circle {
+  width: 2.4em;
+  aspect-ratio: 1/1;
+  background-color: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .view6 .text .arrow-text .circle svg {
+  width: 55%;
+}
+main .view6 .text .arrow-text p {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.3px;
+}
 
 @media (min-width: 900px) {
   main {
@@ -675,5 +718,18 @@ main .view5 .bottom .member .text p {
   }
   main .view5 .bottom {
     flex-direction: row;
+  }
+  main .view6 {
+    padding: 4em;
+    padding-top: 0em;
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .view6 .text {
+    width: 50%;
+  }
+  main .view6 .text h1 {
+    font-size: 4.3em;
+    color: #494949;
   }
 }/*# sourceMappingURL=style.css.map */
