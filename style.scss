@@ -585,6 +585,7 @@ main {
 
   .view6 {
     padding: 1.5em;
+    padding-bottom: 3.2em;
 
     .text {
       width: 100%;
@@ -610,7 +611,7 @@ main {
         display: flex;
         align-items: center;
         gap: 1em;
-        
+
         .circle {
           width: 2.4em;
           aspect-ratio: 1/1;
@@ -625,12 +626,69 @@ main {
           }
         }
 
-        p{
+        p {
           text-transform: uppercase;
           font-size: 0.8em;
           letter-spacing: 1.3px;
         }
       }
+    }
+  }
+
+  footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+
+    .text {
+      width: 100%;
+      padding: 3em 1.5em;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      text-align: center;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 2.4em;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.1em;
+      }
+
+      .button {
+        width: fit-content;
+        padding: 0.6em 1.2em;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-family: monospace;
+        letter-spacing: 0.8px;
+        border-radius: 50px;
+        color: #111;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+      }
+    }
+
+    .line {
+      background-color: #fff;
+    }
+
+    .contact {
+      width: 100%;
+      padding: 3em 1.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -855,19 +913,42 @@ main {
       }
     }
 
-    .view6{
+    .view6 {
       padding: 4em;
       padding-top: 0em;
+      padding-bottom: 6.5em;
       display: flex;
       justify-content: flex-end;
 
-      .text{
+      .text {
         width: 50%;
+        gap: 2em;
 
-        h1{
+        h1 {
           font-size: 4.3em;
-          color: #494949;
         }
+      }
+    }
+
+    footer {
+      padding: 4em;
+      padding-top: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text {
+        width: 90%;
+        gap: 3em;
+
+        h2 {
+          width: 60%;
+          font-size: 4.3em;
+        }
+      }
+
+      .contact {
+        padding: 6em;
       }
     }
   }

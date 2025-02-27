@@ -502,6 +502,7 @@ main .view5 .bottom .member .text p {
 }
 main .view6 {
   padding: 1.5em;
+  padding-bottom: 3.2em;
 }
 main .view6 .text {
   width: 100%;
@@ -542,6 +543,57 @@ main .view6 .text .arrow-text p {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1.3px;
+}
+main footer {
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+}
+main footer .text {
+  width: 100%;
+  padding: 3em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  text-align: center;
+}
+main footer .text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main footer .text h2 {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+main footer .text .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6em 1.2em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: monospace;
+  letter-spacing: 0.8px;
+  border-radius: 50px;
+  color: #111;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+main footer .line {
+  background-color: #fff;
+}
+main footer .contact {
+  width: 100%;
+  padding: 3em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 900px) {
@@ -722,14 +774,33 @@ main .view6 .text .arrow-text p {
   main .view6 {
     padding: 4em;
     padding-top: 0em;
+    padding-bottom: 6.5em;
     display: flex;
     justify-content: flex-end;
   }
   main .view6 .text {
     width: 50%;
+    gap: 2em;
   }
   main .view6 .text h1 {
     font-size: 4.3em;
-    color: #494949;
+  }
+  main footer {
+    padding: 4em;
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main footer .text {
+    width: 90%;
+    gap: 3em;
+  }
+  main footer .text h2 {
+    width: 60%;
+    font-size: 4.3em;
+  }
+  main footer .contact {
+    padding: 6em;
   }
 }/*# sourceMappingURL=style.css.map */
