@@ -370,6 +370,52 @@ main .view3 .view3-image-text .bottom .text .text-bottom p {
   letter-spacing: 1px;
   opacity: 80%;
 }
+main .view4 {
+  width: 100%;
+  padding: 1.5em;
+  padding-top: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+main .view4 .blank {
+  display: none;
+}
+main .view4 .view4-text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view4 .view4-text .clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .view4 .view4-text .clients .client {
+  width: 100%;
+  line-height: 2.2em;
+}
+main .view4 .view4-text .clients .client h6 {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: #111;
+}
+main .view4 .view4-text .clients .client h3 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .view4 .view4-text .clients .client p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main .view4 .view4-text .clients .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(17, 17, 17, 0.15);
+}
 
 @media (min-width: 900px) {
   main {
@@ -492,5 +538,40 @@ main .view3 .view3-image-text .bottom .text .text-bottom p {
   }
   main .view3 .view3-image-text .bottom .text .text-top h3 {
     font-size: 4em;
+  }
+  main .view4 {
+    display: grid;
+    grid-template-areas: "a a b b";
+    padding: 4rem;
+    padding-top: 0em;
+  }
+  main .view4 .a {
+    grid-area: a;
+  }
+  main .view4 .b {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+  }
+  main .view4 .b .image-blank {
+    display: grid;
+    grid-template-areas: ". . . . . . a";
+  }
+  main .view4 .b .image-blank .img-a {
+    grid-area: a;
+  }
+  main .view4 .b .clients {
+    gap: 1.5em;
+  }
+  main .view4 .b .clients .client {
+    display: flex;
+    gap: 3em;
+  }
+  main .view4 .b .clients .client h3 {
+    font-size: 2em;
+  }
+  main .view4 .b .clients .client p {
+    margin-left: auto;
   }
 }/*# sourceMappingURL=style.css.map */

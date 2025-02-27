@@ -428,6 +428,62 @@ main {
       }
     }
   }
+
+  .view4 {
+    width: 100%;
+    padding: 1.5em;
+    padding-top: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+
+    .blank {
+      display: none;
+    }
+
+    .view4-text {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .clients {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .client {
+          width: 100%;
+          line-height: 2.2em;
+
+          h6 {
+            font-size: 0.7em;
+            letter-spacing: 2px;
+            color: #111;
+          }
+
+          h3 {
+            font-size: 1.7em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+
+          p {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+
+        .line {
+          width: 100%;
+          height: 1px;
+          background-color: rgba(17, 17, 17, 0.15);
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -578,6 +634,49 @@ main {
               h3 {
                 font-size: 4em;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .view4 {
+      display: grid;
+      grid-template-areas: "a a b b";
+      padding: 4rem;
+      padding-top: 0em;
+
+      .a {
+        grid-area: a;
+      }
+
+      .b {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+
+        .image-blank {
+          display: grid;
+          grid-template-areas: ". . . . . . a";
+          .img-a {
+            grid-area: a;
+          }
+        }
+
+        .clients {
+          gap: 1.5em;
+
+          .client {
+            display: flex;
+            gap: 3em;
+
+            h3{
+              font-size: 2em;
+            }
+
+            p {
+              margin-left: auto;
             }
           }
         }
