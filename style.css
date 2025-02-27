@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(/font/GILROY-LIGHT_1.OTF);
+}
+@font-face {
+  font-family: "consola";
+  src: url(/font/CONSOLA.woff2);
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +31,7 @@ main {
 }
 main .hero-text {
   width: 100%;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 main .hero-text img {
   width: 100%;
@@ -33,12 +41,12 @@ main .hero-text img {
 main .hero-text .text {
   display: flex;
   justify-content: space-between;
-  font-family: monospace;
+  font-family: "consola";
   text-transform: uppercase;
   padding-top: 1em;
 }
 main .hero-text .text p {
-  font-size: 1.1em;
+  font-size: 0.9em;
   opacity: 90%;
   letter-spacing: 0.5px;
 }
@@ -73,8 +81,8 @@ main .image-text .bottom h1 {
   line-height: 1em;
 }
 main .image-text .bottom p {
-  font-size: 1.5em;
-  font-family: monospace;
+  font-size: 1.2em;
+  font-family: "consola";
   opacity: 80%;
   line-height: 1.3em;
 }
@@ -138,8 +146,8 @@ main .view1 .bottom .text h1 {
   text-transform: uppercase;
 }
 main .view1 .bottom .text p {
-  font-family: monospace;
-  font-size: 1.5em;
+  font-family: "consola";
+  font-size: 1.2em;
   line-height: 1.5em;
   opacity: 50%;
 }
@@ -189,8 +197,8 @@ main .view2 .top .services .service .service-top h3 {
   letter-spacing: 2px;
 }
 main .view2 .top .services .service .service-top p {
-  font-family: monospace;
-  font-size: 1.4em;
+  font-family: "consola";
+  font-size: 1.1em;
   opacity: 50%;
   line-height: 1.4em;
 }
@@ -279,8 +287,8 @@ main .view3 .view3-image-text .top .text .text-top h3 {
   text-transform: uppercase;
 }
 main .view3 .view3-image-text .top .text .text-top p {
-  font-family: monospace;
-  font-size: 1.4em;
+  font-family: "consola";
+  font-size: 1.1em;
   opacity: 55%;
   font-weight: 600;
   padding-top: 0.4em;
@@ -340,8 +348,8 @@ main .view3 .view3-image-text .bottom .text .text-top h3 {
   text-transform: uppercase;
 }
 main .view3 .view3-image-text .bottom .text .text-top p {
-  font-family: monospace;
-  font-size: 1.4em;
+  font-family: "consola";
+  font-size: 1.1em;
   opacity: 55%;
   font-weight: 600;
   padding-top: 0.4em;
@@ -437,8 +445,8 @@ main .view5 .top h2 {
   font-weight: 500;
 }
 main .view5 .top p {
-  font-size: 1.5em;
-  font-family: monospace;
+  font-size: 1.3em;
+  font-family: "consola";
   line-height: 1.4em;
   color: #2d2d2d;
 }
@@ -480,9 +488,9 @@ main .view5 .bottom .member .text .logo-text {
   justify-content: space-between;
 }
 main .view5 .bottom .member .text .logo-text h6 {
-  font-size: 1.1em;
+  font-size: 0.9em;
   text-transform: uppercase;
-  font-family: monospace;
+  font-family: "consola";
   letter-spacing: 0.7px;
   color: #5b5b5b;
 }
@@ -495,8 +503,8 @@ main .view5 .bottom .member .text .logo-text .logo i {
 }
 main .view5 .bottom .member .text p {
   width: 95%;
-  font-family: monospace;
-  font-size: 1.3em;
+  font-family: "consola";
+  font-size: 1.1em;
   line-height: 1.6em;
   color: rgba(17, 17, 17, 0.5);
 }
@@ -574,8 +582,8 @@ main footer .text .button {
   width: fit-content;
   padding: 0.6em 1.2em;
   text-transform: uppercase;
-  font-size: 1.2em;
-  font-family: monospace;
+  font-size: 1em;
+  font-family: "consola";
   letter-spacing: 0.8px;
   border-radius: 50px;
   color: #111;
@@ -600,15 +608,21 @@ main footer .contact {
   main {
     gap: 3rem;
   }
+  main .hero-text {
+    padding: 0 4em;
+    padding-top: 4em;
+  }
   main .image-text {
     flex-direction: row-reverse;
     padding: 4em;
+    padding-top: 1em;
   }
   main .image-text .bottom h1 {
     font-size: 5em;
   }
   main .image-text .bottom p {
-    font-size: 2em;
+    width: 80%;
+    font-size: 1.6em;
   }
   main .image-text .bottom .services {
     margin-top: auto;
@@ -620,6 +634,7 @@ main footer .contact {
     flex-direction: row;
     gap: 4em;
     padding: 4em;
+    padding-top: 1em;
   }
   main .view1 .top {
     width: 45%;
@@ -635,6 +650,9 @@ main footer .contact {
   }
   main .view1 .bottom .text h1 {
     font-size: 6.3em;
+  }
+  main .view1 .bottom .text p {
+    width: 71%;
   }
   main .view2 {
     flex-direction: row;

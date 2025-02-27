@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(/font/GILROY-LIGHT_1.OTF);
+}
+
+@font-face {
+  font-family: "consola";
+  src: url(/font/CONSOLA.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +33,7 @@ main {
 
   .hero-text {
     width: 100%;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 
     img {
       width: 100%;
@@ -33,12 +43,12 @@ main {
     .text {
       display: flex;
       justify-content: space-between;
-      font-family: monospace;
+      font-family: "consola";
       text-transform: uppercase;
       padding-top: 1em;
 
       p {
-        font-size: 1.1em;
+        font-size: 0.9em;
         opacity: 90%;
         letter-spacing: 0.5px;
       }
@@ -78,8 +88,8 @@ main {
       }
 
       p {
-        font-size: 1.5em;
-        font-family: monospace;
+        font-size: 1.2em;
+        font-family: "consola";
         opacity: 80%;
         line-height: 1.3em;
       }
@@ -155,8 +165,8 @@ main {
         }
 
         p {
-          font-family: monospace;
-          font-size: 1.5em;
+          font-family: "consola";
+          font-size: 1.2em;
           line-height: 1.5em;
           opacity: 50%;
         }
@@ -213,8 +223,8 @@ main {
             }
 
             p {
-              font-family: monospace;
-              font-size: 1.4em;
+              font-family: "consola";
+              font-size: 1.1em;
               opacity: 50%;
               line-height: 1.4em;
             }
@@ -317,8 +327,8 @@ main {
             }
 
             p {
-              font-family: monospace;
-              font-size: 1.4em;
+              font-family: "consola";
+              font-size: 1.1em;
               opacity: 55%;
               font-weight: 600;
               padding-top: 0.4em;
@@ -389,8 +399,8 @@ main {
             }
 
             p {
-              font-family: monospace;
-              font-size: 1.4em;
+              font-family: "consola";
+              font-size: 1.1em;
               opacity: 55%;
               font-weight: 600;
               padding-top: 0.4em;
@@ -507,8 +517,8 @@ main {
       }
 
       p {
-        font-size: 1.5em;
-        font-family: monospace;
+        font-size: 1.3em;
+        font-family: "consola";
         line-height: 1.4em;
         color: #2d2d2d;
       }
@@ -554,9 +564,9 @@ main {
             justify-content: space-between;
 
             h6 {
-              font-size: 1.1em;
+              font-size: 0.9em;
               text-transform: uppercase;
-              font-family: monospace;
+              font-family: "consola";
               letter-spacing: 0.7px;
               color: #5b5b5b;
             }
@@ -573,8 +583,8 @@ main {
 
           p {
             width: 95%;
-            font-family: monospace;
-            font-size: 1.3em;
+            font-family: "consola";
+            font-size: 1.1em;
             line-height: 1.6em;
             color: rgba(17, 17, 17, 0.5);
           }
@@ -666,8 +676,8 @@ main {
         width: fit-content;
         padding: 0.6em 1.2em;
         text-transform: uppercase;
-        font-size: 1.2em;
-        font-family: monospace;
+        font-size: 1em;
+        font-family: "consola";
         letter-spacing: 0.8px;
         border-radius: 50px;
         color: #111;
@@ -697,9 +707,15 @@ main {
   main {
     gap: 3rem;
 
+    .hero-text{
+      padding: 0 4em;
+      padding-top: 4em;
+    }
+
     .image-text {
       flex-direction: row-reverse;
       padding: 4em;
+      padding-top: 1em;
 
       .bottom {
         h1 {
@@ -707,7 +723,8 @@ main {
         }
 
         p {
-          font-size: 2em;
+          width: 80%;
+          font-size: 1.6em;
         }
 
         .services {
@@ -726,6 +743,7 @@ main {
       flex-direction: row;
       gap: 4em;
       padding: 4em;
+      padding-top: 1em;
 
       .top {
         width: 45%;
@@ -742,6 +760,10 @@ main {
 
           h1 {
             font-size: 6.3em;
+          }
+
+          p{
+            width: 71%;
           }
         }
       }
