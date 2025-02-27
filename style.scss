@@ -707,7 +707,7 @@ main {
   main {
     gap: 3rem;
 
-    .hero-text{
+    .hero-text {
       padding: 0 4em;
       padding-top: 4em;
     }
@@ -762,7 +762,7 @@ main {
             font-size: 6.3em;
           }
 
-          p{
+          p {
             width: 71%;
           }
         }
@@ -953,8 +953,6 @@ main {
     }
 
     footer {
-      padding: 4em;
-      padding-top: 6em;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -962,6 +960,8 @@ main {
       .text {
         width: 90%;
         gap: 3em;
+        padding: 4em;
+        padding-top: 6em;
 
         h2 {
           width: 60%;

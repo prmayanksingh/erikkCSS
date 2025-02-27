@@ -804,8 +804,6 @@ main footer .contact {
     font-size: 4.3em;
   }
   main footer {
-    padding: 4em;
-    padding-top: 6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -813,6 +811,8 @@ main footer .contact {
   main footer .text {
     width: 90%;
     gap: 3em;
+    padding: 4em;
+    padding-top: 6em;
   }
   main footer .text h2 {
     width: 60%;
